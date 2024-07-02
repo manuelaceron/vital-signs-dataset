@@ -8,7 +8,7 @@ Real time, raw data of Oxygen saturation (SpO2) and Heart Rate are taken from th
 
 Heart Rate and SpO2 values are measured while performing certain physiological activities such as “climbing steps”, “walking briskly”, “squats”, “planks” and “mountain climbing (MC)”.
 
-Data Preparation consists on three steps:
+Data Preparation in DS_data_group_18.ipynb consists of three steps:
 
 1. Manual preprocessing:
    - Construction of independent csv file containing SpO2 and Heart Rate for each experiment.
