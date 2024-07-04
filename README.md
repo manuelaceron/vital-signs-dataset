@@ -1,22 +1,22 @@
-# vital-signs-dataset
+# Building a Vital signs dataset
 
-A series of csv files from several experiments of a group of 5 person is processed and converted into a final csv dataset ready to use in further AI-based modelling.
+This repository showcases the data preparation phase of a Data Science course mini-project at *Saarland University*. It involves implementing various techniques to process raw data collected from a series of experiments using a sensor patch developed by the *Leibniz Institute of New Materials (INM)*. The data includes real-time measurements of Oxygen saturation (SpO2) and Heart Rate (HR), along with xyz acceleration, recorded during activities such as "resting", “climbing steps”, “walking briskly”, “squats”, “planks”, and “mountain climbing (MC)”.
 
-This repository  shows Data preparation phase of **Data Science** course mini-project at **Saarland University**. 
+The process includes processing CSV files from multiple experiments involving a group of five individuals, transforming them into a refined CSV dataset. Specifically, data preparation in the notebook DS_data_group_18.ipynb consists of the following steps:
 
-Real time, raw data of Oxygen saturation (SpO2) and Heart Rate are taken from the sensor + patch developed by the **Leibniz Institute of New Materials (INM)**.
+## Manual preprocessing
+1. Creation of independent CSV files containing SpO2 and Heart Rate data for each experiment.
+2. Manual removal of erroneous data entries.
 
-Heart Rate and SpO2 values are measured while performing certain physiological activities such as “climbing steps”, “walking briskly”, “squats”, “planks” and “mountain climbing (MC)”.
+## Processing exercise subsets
+1. Replacement of default sensor values ("-999") with mean values.
+2. Adjustment of data to achieve balanced information across different types of physical exercises.
 
-Data Preparation in DS_data_group_18.ipynb consists of three steps:
+## Outlier removal
+1. Identification of outliers.
+2. Removal of outliers using the Standard Deviation Method and DBSCAN.
 
-1. Manual preprocessing:
-   - Construction of independent csv file containing SpO2 and Heart Rate for each experiment.
-   - Manual cleaning of junk data.
-2. Processing exercise subsets:
-   - Replacement of default sensor values “-999” by a mean value.
-   - Shrink data in order to have balanced information for each type of physical exercise.
-3. Removing outliers:
-   - Outlier identification.
-   - Outlier removal: Standard Deviation Method.
-   - Outlier removal: DBSCAN.
+## Analysis
+1. Data analytics on the final dataset to gain insights into its distribution and characteristics.
+
+Overall, this repository demonstrates the comprehensive preparation and analysis of raw sensor data, culminating in a refined dataset suitable for further AI-based modeling.
